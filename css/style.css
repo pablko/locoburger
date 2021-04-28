@@ -1,61 +1,63 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
-body{
-  font-family: 'Rubik', sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 1140px; */
 }
 
 /* Header */
-header{
+header {
   background-color: #fff;
   height: 100px;
   position: relative;
   padding: 0 100px;
 }
-.img-logo{
+.img-logo {
   padding: 5px 0;
   height: 90px;
   float: left;
 }
-nav{
+nav {
   display: inline;
   position: absolute;
   right: 100px;
   bottom: 15px;
 }
-nav ul{
+nav ul {
   padding: 0px;
   margin: 0px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
-nav a{
+nav a {
   color: #e8b746;
-  font-size: .8em;
-  transition: .5s;
+  font-size: 0.8em;
+  transition: 0.5s;
 }
-nav a:hover{
+nav a:hover {
   font-weight: bold;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 /* Jumbotron */
 
-#jumbotron{
+#jumbotron {
   background-color: #e8b746;
 }
-main{
-  display: inline-flex;
-  width: 100%;
+#jumbotron main {
+  display: flex;
   justify-content: space-around;
 }
-.main-text{
+.main-text {
   width: 400px;
   align-self: center;
   border: 3px solid #49a12b;
@@ -63,71 +65,71 @@ main{
   padding: 30px;
   text-align: center;
 }
-.loco{
+.loco {
   color: #49a12b;
 }
 
-.main-text h1{
-  font-family: 'Lato', sans-serif;
+.main-text h1 {
+  font-family: "Lato", sans-serif;
   font-size: 2.5em;
 }
-.btn-accion{
-  background-color:#49a12b;
-	border-radius:50px;
-	display:inline-block;
-	cursor:pointer;
-	color:#fff;
+.btn-accion {
+  background-color: #49a12b;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
   text-transform: uppercase;
-	font-size: .7em;
-	padding:8px 31px;
-	text-decoration:none;
+  font-size: 0.7em;
+  padding: 8px 31px;
+  text-decoration: none;
   margin-top: 20px;
   box-shadow: 0 3px 0 #347a1c;
-  transition: .3s;
+  transition: 0.3s;
 }
-.btn-accion:hover{
+.btn-accion:hover {
   background-color: #4bac2b;
 }
-.btn-accion:active{
-  position:relative;
-	top:2px;
+.btn-accion:active {
+  position: relative;
+  top: 2px;
 }
 
 /* Redes Sociales */
 
-#redesSociales{
+#redesSociales {
   margin: 50px 0;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   column-gap: 20px;
   justify-content: space-around;
 }
-.logo-redes img{
+.logo-redes img {
   width: 80px;
 }
-.logo-redes a{
+.logo-redes a {
   text-align: center;
   font-size: 1em;
 }
 
 /* Info Adicional */
 
-#infoAdicional{
-  display: inline-flex;
+#infoAdicional {
   height: 500px;
-  width: 100%;
-  justify-content: space-evenly;
-  column-gap: 40px;
   background-color: #e8b746;
+  display: flex;
+  justify-content: space-around !important;
+  column-gap: 40px;
 }
-.info-franquicia, .info-promos{
+.info-franquicia,
+.info-promos {
   align-self: center;
   justify-self: center;
-  border: 3px #49a12b solid ;
-  border-radius: 10px; 
+  border: 3px #49a12b solid;
+  border-radius: 10px;
 }
-.info-franquicia{
-  width: 40%;
+.info-franquicia {
+  width: 500px;
   height: 400px;
   margin-left: 40px;
   background-image: url(../images/background-hamburgueseria.jpg);
@@ -140,17 +142,18 @@ main{
   justify-content: center;
   align-items: center;
 }
-.info-franquicia p, .info-franquicia h2{
+.info-franquicia p,
+.info-franquicia h2 {
   margin-top: 60px;
   box-shadow: 0px 0px 55px 2px rgba(212, 171, 171, 0.384);
   background-color: rgba(212, 171, 171, 0.184);
 }
-.info-promos{
+.info-promos {
   background-image: url(../images/background-promos.jpg);
   background-size: cover;
   position: relative;
-  width: 60%;
   height: 400px;
+  width: 650px;
   margin-right: 40px;
   display: flex;
   flex-direction: row;
@@ -158,7 +161,7 @@ main{
   justify-content: center;
   align-items: center;
 }
-.info-promos::before{
+.info-promos::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -166,26 +169,27 @@ main{
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: .5;
+  opacity: 0.5;
   border-radius: 8px;
   z-index: 1;
 }
-.info-promos *{
+.info-promos * {
   z-index: 999;
 }
-.info-promos h2, .info-promos p{
+.info-promos h2,
+.info-promos p {
   margin-top: 60px;
-  color: rgb(228, 228, 228);
+  color: #e4e4e4;
+  text-align: center;
 }
-
 
 /* Menú */
 
-#menuLocoburger{
+#menuLocoburger {
   display: grid;
   max-width: 960px;
   height: 100vh;
-  grid-template-columns: 300px .7fr 1fr 1fr;
+  grid-template-columns: 300px 0.7fr 1fr 1fr;
   grid-template-rows: repeat(4, 400px);
   gap: 20px 20px;
   grid-template-areas:
@@ -196,48 +200,47 @@ main{
   justify-content: center;
   align-items: stretch;
 }
-.menu-burger{
+.menu-burger {
   grid-area: burger;
   background-image: url(../images/menu-burger.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.menu-cerveza{
+.menu-cerveza {
   grid-area: cerveza;
   background-image: url(../images/menu-cerveza.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.menu-veggie{
+.menu-veggie {
   grid-area: veggie;
   align-self: center;
   /* background-image: url(../images/menu-veggie.jpg);
   background-size: contain;
   background-repeat: no-repeat; */
 }
-.menu-hotdog{
+.menu-hotdog {
   grid-area: hotdog;
   background-image: url(../images/menu-hotdog.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.menu-papas{
+.menu-papas {
   grid-area: papas;
   background-image: url(../images/menu-papas.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.menu-ultra{
+.menu-ultra {
   grid-area: ultra;
   background-image: url(../images/menu-ultra.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
 /* Footer */
 
-footer{
+footer {
   height: 80px;
   width: 100%;
   display: flex;
@@ -245,8 +248,12 @@ footer{
   justify-content: center;
   background-color: #000;
   color: #fff;
-  font-size: .8em;
+  font-size: 0.8em;
 }
-footer div{
+footer div {
   padding: 0 10px;
+}
+
+.container {
+  width: 1140px;
 }
