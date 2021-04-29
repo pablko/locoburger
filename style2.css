@@ -7,9 +7,6 @@
 body{
   font-family: "Rubik", sans-serif;
   font-size: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  /* width: 1140px; */
 }
 
 /* Header */
@@ -17,7 +14,7 @@ header{
   background-color: #fff;
   height: 100px;
   position: relative;
-  padding: 0 200px;
+  padding: 0 100px;
 }
 .img-logo{
   padding: 5px 0;
@@ -27,7 +24,7 @@ header{
 nav{
   display: inline;
   position: absolute;
-  right: 200px;
+  right: 100px;
   bottom: 15px;
 }
 nav ul{
@@ -52,10 +49,10 @@ nav a:hover{
 
 #jumbotron{
   background-color: #e8b746;
-  padding: 0 200px;
 }
-#jumbotron main{
-  display: flex;
+main{
+  display: inline-flex;
+  width: 100%;
   justify-content: space-around;
 }
 .main-text{
@@ -76,14 +73,14 @@ nav a:hover{
 }
 .btn-accion{
   background-color: #49a12b;
-  border-radius: 50px;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
+	border-radius: 50px;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
   text-transform: uppercase;
-  font-size: 0.7em;
-  padding: 8px 31px;
-  text-decoration: none;
+	font-size: 0.7em;
+	padding: 8px 31px;
+	text-decoration: none;
   margin-top: 20px;
   box-shadow: 0 3px 0 #347a1c;
   transition: 0.3s;
@@ -93,14 +90,13 @@ nav a:hover{
 }
 .btn-accion:active{
   position: relative;
-  top: 2px;
+	top: 2px;
 }
 
 /* Redes Sociales */
 
 #redesSociales{
   margin: 50px 0;
-  padding: 0 200px;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   column-gap: 20px;
@@ -117,22 +113,21 @@ nav a:hover{
 /* Info Adicional */
 
 #infoAdicional{
+  display: inline-flex;
   height: 500px;
-  display: flex;
-  background-color: #e8b746;
-  justify-content: flex-start !important;
+  width: 100%;
+  justify-content: space-evenly;
   column-gap: 40px;
-  padding: 0 130px;
+  background-color: #e8b746;
 }
-.info-franquicia,
-.info-promos{
+.info-franquicia, .info-promos{
   align-self: center;
   justify-self: center;
-  border: 3px #49a12b solid;
-  border-radius: 10px;
+  border: 3px #49a12b solid ;
+  border-radius: 10px; 
 }
 .info-franquicia{
-  width: 500px;
+  width: 40%;
   height: 400px;
   margin-left: 40px;
   background-image: url(../images/background-hamburgueseria.jpg);
@@ -145,18 +140,17 @@ nav a:hover{
   justify-content: center;
   align-items: center;
 }
-.info-franquicia p,
-.info-franquicia h2{
+.info-franquicia p, .info-franquicia h2{
   margin-top: 60px;
   box-shadow: 0px 0px 55px 2px rgba(212, 171, 171, 0.384);
-  background-color: #d4abab2f;
+  background-color: rgba(212, 171, 171, 0.184);
 }
 .info-promos{
   background-image: url(../images/background-promos.jpg);
   background-size: cover;
   position: relative;
+  width: 60%;
   height: 400px;
-  width: 650px;
   margin-right: 40px;
   display: flex;
   flex-direction: row;
@@ -172,33 +166,31 @@ nav a:hover{
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: .5;
   border-radius: 8px;
   z-index: 1;
 }
 .info-promos *{
   z-index: 999;
 }
-.info-promos h2,
-.info-promos p{
+.info-promos h2, .info-promos p{
   margin-top: 60px;
-  color: #ffffff;
-  text-align: center;
+  color: rgb(228, 228, 228);
 }
+
 
 /* Menú */
 
 #menuLocoburger{
-  background-color: #e8b746;
-}
-#menuLocoburger .menu-container{
   display: grid;
+  background-color: #e8b746;
+  max-width: 960px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding:  40px 200px;
-  grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
-  grid-template-rows: repeat(4, 350px);
-  gap: 20px;
+  grid-template-columns: 300px .7fr 1fr 1fr;
+  grid-template-rows: repeat(4, 400px);
+  gap: 20px 20px;
   grid-template-areas:
     "burger burger cerveza cerveza"
     "veggie veggie veggie veggie"
@@ -210,42 +202,24 @@ nav a:hover{
 .menu-burger,.menu-cerveza, .menu-hotdog, .menu-papas, .menu-ultra, .menu-veggie{
   border: 3px solid #347a1c;
   border-radius: 12px;
-  position: relative;
-  /* color: #fff; */
-  text-align: center;
-}
-/* .menu-burger h3,.menu-cerveza h3, .menu-hotdog h3, .menu-papas h3, .menu-ultra h3, .menu-veggie h3{
-  z-index: 2;
-  margin-top: 30px;
-} */
-
-/*  */
-
-
-.menu-text{
-  text-align: center;
-  padding-top: 40px;
 }
 .menu-burger{
   grid-area: burger;
   background-image: url(../images/menu-burger.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 .menu-cerveza{
   grid-area: cerveza;
   background-image: url(../images/menu-cerveza.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
 }
 .menu-veggie{
   grid-area: veggie;
   background-image: url(../images/menu-veggie.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80%;
 }
 .menu-hotdog{
   grid-area: hotdog;
@@ -265,27 +239,6 @@ nav a:hover{
   background-image: url(../images/menu-ultra.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
-}
-.menu-burger::before,.menu-cerveza::before, .menu-hotdog::before, .menu-papas::before, .menu-ultra::before, .menu-veggie::before{
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.3;
-  border-radius: 8px;
-  z-index: 1;
-}
-.menu-burger *,.menu-cerveza *, .menu-hotdog *, .menu-papas *, .menu-ultra *, .menu-veggie *{
-  position: absolute;
-  z-index: 999;
-  color: #fff;
-  left: 0;
-  right: 0;
-  top: 30px;
 }
 
 /* Locales */
@@ -314,6 +267,8 @@ nav a:hover{
   height: auto;
 }
 
+
+
 /* Footer */
 
 footer{
@@ -324,12 +279,8 @@ footer{
   justify-content: center;
   background-color: #000;
   color: #fff;
-  font-size: 0.8em;
+  font-size: .8em;
 }
 footer div{
   padding: 0 10px;
-}
-
-.container{
-  width: 1140px;
 }
