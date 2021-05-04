@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none !important;
   list-style: none !important;
 }
-body{
+body {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   margin-right: auto;
@@ -13,54 +13,54 @@ body{
 }
 
 /* Header */
-header{
+header {
   background-color: #000;
   height: 100px;
   position: relative;
   padding: 0 200px;
 }
-.img-logo{
+.img-logo {
   padding: 5px 0;
   height: 90px;
   float: left;
 }
-nav{
+nav {
   display: inline;
   position: absolute;
   right: 200px;
   bottom: 15px;
 }
-nav ul{
+nav ul {
   padding: 0px;
   margin: 0px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
-nav a{
+nav a {
   color: #e8b746;
   font-size: 0.8em;
   transition: 0.5s;
 }
-nav a:hover{
+nav a:hover {
   color: #e8b746;
   font-weight: bold;
   font-size: 0.9em;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* Jumbotron */
 
-#jumbotron{
+#jumbotron {
   background-color: #e8b746;
   padding: 0 200px;
 }
-#jumbotron main{
+#jumbotron main {
   display: flex;
   justify-content: space-around;
 }
-.main-text{
+.main-text {
   width: 400px;
   align-self: center;
   border: 3px solid #49a12b;
@@ -68,15 +68,15 @@ nav a:hover{
   padding: 30px;
   text-align: center;
 }
-.loco{
+.loco {
   color: #49a12b;
 }
 
-.main-text h1{
+.main-text h1 {
   font-family: "Lato", sans-serif;
   font-size: 2.5em;
 }
-.btn-accion{
+.btn-accion {
   background-color: #49a12b;
   border-radius: 50px;
   display: inline-block;
@@ -90,17 +90,17 @@ nav a:hover{
   box-shadow: 0 3px 0 #347a1c;
   transition: 0.3s;
 }
-.btn-accion:hover{
+.btn-accion:hover {
   background-color: #4bac2b;
 }
-.btn-accion:active{
+.btn-accion:active {
   position: relative;
   top: 2px;
 }
 
 /* Redes Sociales */
 
-#redesSociales{
+#redesSociales {
   margin: 50px 0;
   padding: 0 200px;
   display: grid;
@@ -108,17 +108,17 @@ nav a:hover{
   column-gap: 20px;
   justify-content: space-around;
 }
-.logo-redes img{
+.logo-redes img {
   width: 80px;
 }
-.logo-redes a{
+.logo-redes a {
   text-align: center;
   font-size: 1em;
 }
 
 /* Info Adicional */
 
-#infoAdicional{
+#infoAdicional {
   height: 500px;
   display: flex;
   background-color: #e8b746;
@@ -127,13 +127,13 @@ nav a:hover{
   padding: 0 130px;
 }
 .info-franquicia,
-.info-promos{
+.info-promos {
   align-self: center;
   justify-self: center;
   border: 3px #49a12b solid;
   border-radius: 10px;
 }
-.info-franquicia{
+.info-franquicia {
   width: 500px;
   height: 400px;
   margin-left: 40px;
@@ -148,12 +148,12 @@ nav a:hover{
   align-items: center;
 }
 .info-franquicia p,
-.info-franquicia h2{
+.info-franquicia h2 {
   margin-top: 60px;
   box-shadow: 0px 0px 55px 2px rgba(212, 171, 171, 0.384);
   background-color: #d4abab2f;
 }
-.info-promos{
+.info-promos {
   background-image: url(../images/background-promos.jpg);
   background-size: cover;
   position: relative;
@@ -166,7 +166,7 @@ nav a:hover{
   justify-content: center;
   align-items: center;
 }
-.info-promos::before{
+.info-promos::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -178,11 +178,11 @@ nav a:hover{
   border-radius: 8px;
   z-index: 1;
 }
-.info-promos *{
+.info-promos * {
   z-index: 999;
 }
 .info-promos h2,
-.info-promos p{
+.info-promos p {
   margin-top: 60px;
   color: #ffffff;
   text-align: center;
@@ -190,14 +190,14 @@ nav a:hover{
 
 /* Menú */
 
-#menuLocoburger{
+#menuLocoburger {
   background-color: #e8b746;
 }
-#menuLocoburger .menu-container{
+#menuLocoburger .menu-container {
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  padding:  40px 200px;
+  padding: 40px 200px;
   grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 350px);
   gap: 20px;
@@ -209,67 +209,69 @@ nav a:hover{
   justify-content: center;
   align-items: stretch;
 }
-.menu-burger,.menu-cerveza, .menu-hotdog, .menu-papas, .menu-ultra, .menu-veggie{
+.menu-burger,
+.menu-cerveza,
+.menu-hotdog,
+.menu-papas,
+.menu-ultra,
+.menu-veggie {
   border: 3px solid #347a1c;
   border-radius: 12px;
   position: relative;
-  /* color: #fff; */
   text-align: center;
+  transition: 0.3s;
 }
-/* .menu-burger h3,.menu-cerveza h3, .menu-hotdog h3, .menu-papas h3, .menu-ultra h3, .menu-veggie h3{
-  z-index: 2;
-  margin-top: 30px;
-} */
-
-/*  */
-
-
-.menu-text{
+.menu-text {
   text-align: center;
   padding-top: 40px;
 }
-.menu-burger{
+.menu-burger {
   grid-area: burger;
   background-image: url(../images/menu-burger.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.menu-cerveza{
+.menu-cerveza {
   grid-area: cerveza;
   background-image: url(../images/menu-cerveza.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
 }
-.menu-veggie{
+.menu-veggie {
   grid-area: veggie;
   background-image: url(../images/menu-veggie.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 80%;
 }
-.menu-hotdog{
+.menu-hotdog {
   grid-area: hotdog;
   background-image: url(../images/menu-hotdog.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.menu-papas{
+.menu-papas {
   grid-area: papas;
   background-image: url(../images/menu-papas.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.menu-ultra{
+.menu-ultra {
   grid-area: ultra;
   background-image: url(../images/menu-ultra.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
 }
-.menu-burger::before,.menu-cerveza::before, .menu-hotdog::before, .menu-papas::before, .menu-ultra::before, .menu-veggie::before{
+.menu-burger::before,
+.menu-cerveza::before,
+.menu-hotdog::before,
+.menu-papas::before,
+.menu-ultra::before,
+.menu-veggie::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -281,7 +283,12 @@ nav a:hover{
   border-radius: 8px;
   z-index: 1;
 }
-.menu-burger *,.menu-cerveza *, .menu-hotdog *, .menu-papas *, .menu-ultra *, .menu-veggie *{
+.menu-burger *,
+.menu-cerveza *,
+.menu-hotdog *,
+.menu-papas *,
+.menu-ultra *,
+.menu-veggie * {
   position: absolute;
   z-index: 999;
   color: #fff;
@@ -292,132 +299,141 @@ nav a:hover{
 
 /* Locales */
 
-#locales{
+#locales {
   background-color: #e8b746;
   padding: 30px;
   text-align: center;
 }
-#locales h2{
+#locales h2 {
   text-align: center;
 }
-#locales main{
+#locales main {
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
 }
-.local-container{
+.local-container {
   border: #49a12b solid 3px;
   border-radius: 12px;
   margin-top: 20px;
   padding: 20px 0;
 }
-#locales img{
+#locales img {
   width: 80%;
   height: auto;
 }
-#locales img:hover{
-  animation: agitar 0.82s cubic-bezier(.36,.07,.19,.97) both;
+#locales img:hover {
+  animation: agitar 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
-
 /* Franquicias */
 
-#franquiciasMain{
+#franquiciasMain {
   background-image: url(../images/background-franquicia.jpg);
   background-size: cover;
   background-position: bottom;
   height: calc(100vh - 100px);
   color: #fff;
 }
-#franquiciasMain .fran-container{
+#franquiciasMain .fran-container {
   margin-left: auto;
   margin-right: auto;
-  padding:  40px 200px;
+  padding: 40px 200px;
 }
-.fran-container h1{
+.fran-form {
+  width: 700px;
+  margin: 0 auto;
+}
+.fran-container h1 {
   text-align: center;
 }
-.fran-container p{
+.fran-container p {
   margin-top: 30px;
   text-align: center;
 }
-.fran-section{
+.fran-section {
   margin-left: auto;
   margin-right: auto;
-  padding:  40px 200px;
+  padding: 40px 200px;
   background-color: #e8b746;
   text-align: center;
 }
-.fran-section p{
+.fran-section p {
   margin-top: 20px;
 }
 
-.fran-form .row{
+.fran-form .row {
   margin: 10px;
 }
 
-
-
 /* Promos */
 
-#promos{
-  /* background-color: #e8b746; */
+#promos {
   background-image: url(../images/bg-promos.jpg);
   background-size: cover;
   height: calc(100vh - 100px);
+  padding: 0 200px;
 }
-.img-promos{
-  width: 70%;
+#promos .row {
+  height: 100%;
+}
+.img-promos {
+  width: 90%;
   height: auto;
 }
-.promo-item-2{
-  align-self: center;
-  justify-self: center;
+.promo-item-1 {
+  /* width: 600px !important; */
+  text-align-las;
 }
-
+.promo-item-2 {
+  /* margin: auto 0; */
+}
 
 /* Footer */
 
-footer{
+footer {
   height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #000;
-  background: linear-gradient(to right, #000000 0%, #C49B3B 85%, #E8B746 100%);
+  background: linear-gradient(to right, #000000 0%, #c49b3b 50%, #e8b746 100%);
   color: #fff;
   font-size: 0.8em;
 }
-footer div{
+footer div {
   padding: 0 10px;
 }
 
-.container{
+.container {
   width: 1140px;
 }
-
-
 
 /* Keyframes */
 
 @keyframes agitar {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
