@@ -92,6 +92,7 @@ nav a:hover {
 }
 .btn-accion:hover {
   background-color: #4bac2b;
+  color: #fff;
 }
 .btn-accion:active {
   position: relative;
@@ -303,6 +304,7 @@ nav a:hover {
   background-color: #e8b746;
   padding: 30px;
   text-align: center;
+  height: calc(75vh - 80px);
 }
 #locales h2 {
   text-align: center;
@@ -384,13 +386,25 @@ nav a:hover {
   width: 90%;
   height: auto;
 }
-.promo-item-1 {
-  /* width: 600px !important; */
-  text-align-las;
+.promo-item-1 p,
+.promo-item-1 h1{
+  font-weight: bold;
 }
 .promo-item-2 {
-  /* margin: auto 0; */
+  margin: auto 0;
 }
+
+#boxPromos{
+  /* height: 100vh; */
+  width: 100%;
+  padding: 30px;
+  background-color: #e8b746;
+}
+.card-title {
+  font-weight: bold;
+}
+
+
 
 /* Footer */
 
@@ -401,7 +415,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #000;
-  background: linear-gradient(to right, #000000 0%, #c49b3b 50%, #e8b746 100%);
+  /* background: linear-gradient(to right, #000000 0%, #c49b3b 50%, #e8b746 100%); */
   color: #fff;
   font-size: 0.8em;
 }

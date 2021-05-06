@@ -8,9 +8,12 @@
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
-    <!-- CSS & Fuentes -->
+    <!--  Fuentes  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -34,9 +37,80 @@
       <div class="row align-items-center justify-content-between">
         <div class="promo-item-1 col-md-5">
           <h1>Encotrá las mejores promos</h1>
+          <p>Tenemos descuentos únicos en todo nuestro menú.</p>
+          <a href="#boxPromos" class="btn-accion">Ver más</a>
         </div>
         <div class="promo-item-2 col-md-5">
           <img src="./images/promo.png" alt="" class="img-promos">
+        </div>
+      </div>
+    </section>
+
+    <section id="boxPromos">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+            <img src="./images/promo1.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">70% OFF loca burger</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facere consectetur.</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 wow animate__animated animate__bounceInDown">
+            <div class="card">
+            <img src="./images/promo2.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">50% OFF Papas locas</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore cum vero dicta.</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+            <img src="./images/promo3.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">40% OFF Hot Dog</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae corporis praesentium.</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+            <img src="./images/promo1.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">2x1 loca burger</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora aliquam sed.</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+            <img src="./images/promo2.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">60% los miércoles</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam sequi id!</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+            <img src="./images/promo3.jpg" class="img-fluid" alt="Promo 1">
+              <div class="card-body">
+                <h5 class="card-title">40% OFF lunes y martes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore velit.</p>
+                <a href="#!" class="btn-accion">OBTENER</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -49,5 +123,28 @@
         <p><span style="font-size: .7em;">© 2021</span> <span class="loco">loco</span>burger </p>
       </div>
     </footer>
+
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      const links = document.querySelectorAll(".btn-accion");
+
+      for (const link of links) {
+        link.addEventListener("click", clickHandler);
+      }
+
+      function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        scroll({
+          top: offsetTop,
+          behavior: "smooth"
+        });
+      }
+    </script>
   </body>
 </html>
