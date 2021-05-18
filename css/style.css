@@ -6,49 +6,31 @@
 }
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   margin-right: auto;
   margin-left: auto;
   /* width: 1140px; */
 }
 
 /* Header */
+
 header {
   background-color: #000;
-  height: 100px;
-  position: relative;
-  padding: 0 200px;
-}
-.img-logo {
-  padding: 5px 0;
-  height: 90px;
-  float: left;
-}
-nav {
-  display: inline;
-  position: absolute;
-  right: 200px;
-  bottom: 15px;
-}
-nav ul {
-  padding: 0px;
-  margin: 0px;
 }
 nav ul li {
-  display: inline-block;
   margin: 0 10px;
+  transition: all .2s ease-in-out;
 }
-nav a {
-  color: #e8b746;
-  font-size: 0.8em;
-  transition: 0.5s;
+nav ul li:hover {
+  transform: scale(1.1);
 }
-nav a:hover {
-  color: #e8b746;
-  font-weight: bold;
-  font-size: 0.9em;
-  transition: 0.5s;
+nav li a {
+  color: #e8b746 !important;
 }
+.toggler-button {
+  background-color: #e8b746;
+}
+
 
 /* Jumbotron */
 
@@ -304,31 +286,45 @@ nav a:hover {
   background-color: #e8b746;
   padding: 30px;
   text-align: center;
-  height: calc(75vh - 80px);
+  /* height: calc(75vh - 80px); */
 }
 #locales h2 {
   text-align: center;
 }
 #locales main {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.local-container {
+.card-location {
   border: #49a12b solid 3px;
   border-radius: 12px;
-  margin-top: 20px;
-  padding: 20px 0;
+  background-color: transparent;
 }
-#locales img {
-  width: 80%;
+.local-container img {
+  width: 70% !important;
   height: auto;
+  margin: 0 auto;
 }
-#locales img:hover {
+/* .local-container img:hover {
   animation: agitar 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+} */
+.modal-map {
+  max-width: 700px !important;
+}
+.modal-map iframe {
+  width: 100%;
+}
+.modal-info {
+  font-size: 0.8em;
+  text-align: start;
+  padding: 0 30px;
+}
+.modal-info img {
+  width: 15px;
+  margin-right: 5px;
 }
 
 /* Franquicias */
@@ -423,9 +419,22 @@ footer div {
   padding: 0 10px;
 }
 
-.container {
-  width: 1140px;
+
+
+/* Media Queries */
+@media (max-width: 991px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li:hover{
+    transform: scale(1);
+  }
+
+  #locales main {
+    flex-wrap: wrap;
+  }
 }
+
 
 /* Keyframes */
 
