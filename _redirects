@@ -1,0 +1,8 @@
+# for root
+/*              /index.html     200
+​
+# for the rest
+/menu/*        /menu.html     200
+/promos/*      /promos.html   200
+/locales/*      /locales.html   200
+/franquicias/*      /franquicias.html   200
