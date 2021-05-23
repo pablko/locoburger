@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none !important;
   list-style: none !important;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -19,7 +20,7 @@ header {
 }
 nav ul li {
   margin: 0 10px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 nav ul li:hover {
   transform: scale(1.1);
@@ -30,7 +31,6 @@ nav li a {
 .toggler-button {
   background-color: #e8b746;
 }
-
 
 /* Jumbotron */
 
@@ -383,14 +383,14 @@ nav li a {
   height: auto;
 }
 .promo-item-1 p,
-.promo-item-1 h1{
+.promo-item-1 h1 {
   font-weight: bold;
 }
 .promo-item-2 {
   margin: auto 0;
 }
 
-#boxPromos{
+#boxPromos {
   /* height: 100vh; */
   width: 100%;
   padding: 30px;
@@ -399,8 +399,6 @@ nav li a {
 .card-title {
   font-weight: bold;
 }
-
-
 
 /* Footer */
 
@@ -419,14 +417,12 @@ footer div {
   padding: 0 10px;
 }
 
-
-
 /* Media Queries */
 @media (max-width: 991px) {
   nav ul {
     text-align: center;
   }
-  nav ul li:hover{
+  nav ul li:hover {
     transform: scale(1);
   }
 
@@ -434,7 +430,6 @@ footer div {
     flex-wrap: wrap;
   }
 }
-
 
 /* Keyframes */
 
