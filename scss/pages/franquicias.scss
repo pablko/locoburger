@@ -1,0 +1,41 @@
+@import "variables";
+
+/* Franquicias */
+
+#franquiciasMain {
+  background-image: url(../images/background-franquicia.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: calc(100vh - 100px);
+  color: #fff;
+}
+#franquiciasMain .fran-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 200px;
+}
+.fran-form {
+  width: 700px;
+  margin: 0 auto;
+}
+.fran-container h1 {
+  text-align: center;
+}
+.fran-container p {
+  margin-top: 30px;
+  text-align: center;
+}
+.fran-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 200px;
+  background-color: $mostaza;
+  text-align: center;
+}
+.fran-section p {
+  margin-top: 20px;
+}
+
+.fran-form .row {
+  margin: 10px;
+}

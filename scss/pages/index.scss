@@ -1,0 +1,160 @@
+@import "../variables";
+
+/* Header */
+
+header {
+  background-color: $black-bg;
+}
+nav ul li {
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+nav li a {
+  color: $mostaza !important;
+}
+.toggler-button {
+  background-color: $mostaza;
+}
+
+/* Jumbotron */
+
+#jumbotron {
+  background-color: $mostaza;
+  padding: 0 200px;
+}
+#jumbotron main {
+  display: flex;
+  justify-content: space-around;
+}
+.main-text {
+  width: 400px;
+  align-self: center;
+  border: 3px solid $green;
+  border-radius: 7px;
+  padding: 30px;
+  text-align: center;
+}
+.loco {
+  color: $green;
+  font-size: 1em;
+}
+
+.main-text h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5em;
+}
+.btn-accion {
+  background-color: $green;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 8px 31px;
+  text-decoration: none;
+  margin-top: 20px;
+  box-shadow: 0 3px 0 #347a1c;
+  transition: 0.3s;
+}
+.btn-accion:hover {
+  background-color: #4bac2b;
+  color: #fff;
+}
+.btn-accion:active {
+  position: relative;
+  top: 2px;
+}
+
+/* Redes Sociales */
+
+#redesSociales {
+  margin: 50px 0;
+  padding: 0 200px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  column-gap: 20px;
+  justify-content: space-around;
+}
+.logo-redes img {
+  width: 80px;
+}
+.logo-redes a {
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Info Adicional */
+
+#infoAdicional {
+  height: 500px;
+  display: flex;
+  background-color: $mostaza;
+  justify-content: flex-start !important;
+  column-gap: 40px;
+  padding: 0 130px;
+}
+.info-franquicia,
+.info-promos {
+  align-self: center;
+  justify-self: center;
+  border: 3px $green solid;
+  border-radius: 10px;
+}
+.info-franquicia {
+  width: 500px;
+  height: 400px;
+  margin-left: 40px;
+  background-image: url(../images/background-hamburgueseria.jpg);
+  background-size: cover;
+  color: $green;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.info-franquicia p,
+.info-franquicia h2 {
+  margin-top: 60px;
+  box-shadow: 0px 0px 55px 2px rgba(212, 171, 171, 0.384);
+  background-color: #d4abab2f;
+}
+.info-promos {
+  background-image: url(../images/background-promos.jpg);
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  width: 650px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.info-promos::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black-bg;
+  opacity: 0.5;
+  border-radius: 8px;
+  z-index: 1;
+}
+.info-promos * {
+  z-index: 999;
+}
+.info-promos h2,
+.info-promos p {
+  margin-top: 60px;
+  color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+@import "variables";
+
+/* Locales */
+
+#locales {
+  background-color: $mostaza;
+  padding: 30px;
+  text-align: center;
+  /* height: calc(75vh - 80px); */
+}
+#locales h2 {
+  text-align: center;
+}
+#locales main {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.card-location {
+  border: $green solid 3px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+.local-container img {
+  width: 70% !important;
+  height: auto;
+  margin: 0 auto;
+}
+.modal-map {
+  max-width: 700px !important;
+}
+.modal-map iframe {
+  width: 100%;
+}
+.modal-info {
+  font-size: 0.8em;
+  text-align: start;
+  padding: 0 30px;
+}
+.modal-info img {
+  width: 15px;
+  margin-right: 5px;
+}

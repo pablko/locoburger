@@ -1,62 +1,76 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none !important;
   list-style: none !important;
   scroll-behavior: smooth;
-}
-body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   margin-right: auto;
-  margin-left: auto;
-}
+  margin-left: auto; }
+
+/* Footer */
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #000; }
+
+.foo-logo, .foo-text {
+  margin: 5px 0; }
+
+.foo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8em; }
+
+footer .container div {
+  padding: 0 10px; }
 
 /* Header */
-
 header {
-  background-color: #000;
-}
+  background-color: #000; }
+
 nav ul li {
   margin: 0 10px;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.2s ease-in-out; }
+
 nav ul li:hover {
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
+
 nav li a {
-  color: #e8b746 !important;
-}
+  color: #e8b746 !important; }
+
 .toggler-button {
-  background-color: #e8b746;
-}
+  background-color: #e8b746; }
 
 /* Jumbotron */
-
 #jumbotron {
   background-color: #e8b746;
-  padding: 0 200px;
-}
+  padding: 0 200px; }
+
 #jumbotron main {
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
+
 .main-text {
   width: 400px;
   align-self: center;
   border: 3px solid #49a12b;
   border-radius: 7px;
   padding: 30px;
-  text-align: center;
-}
+  text-align: center; }
+
 .loco {
   color: #49a12b;
-}
+  font-size: 1em; }
 
 .main-text h1 {
   font-family: "Lato", sans-serif;
-  font-size: 2.5em;
-}
+  font-size: 2.5em; }
+
 .btn-accion {
   background-color: #49a12b;
   border-radius: 50px;
@@ -69,52 +83,48 @@ nav li a {
   text-decoration: none;
   margin-top: 20px;
   box-shadow: 0 3px 0 #347a1c;
-  transition: 0.3s;
-}
+  transition: 0.3s; }
+
 .btn-accion:hover {
   background-color: #4bac2b;
-  color: #fff;
-}
+  color: #fff; }
+
 .btn-accion:active {
   position: relative;
-  top: 2px;
-}
+  top: 2px; }
 
 /* Redes Sociales */
-
 #redesSociales {
   margin: 50px 0;
   padding: 0 200px;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   column-gap: 20px;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
+
 .logo-redes img {
-  width: 80px;
-}
+  width: 80px; }
+
 .logo-redes a {
   text-align: center;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /* Info Adicional */
-
 #infoAdicional {
   height: 500px;
   display: flex;
   background-color: #e8b746;
   justify-content: flex-start !important;
   column-gap: 40px;
-  padding: 0 130px;
-}
+  padding: 0 130px; }
+
 .info-franquicia,
 .info-promos {
   align-self: center;
   justify-self: center;
   border: 3px #49a12b solid;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
+
 .info-franquicia {
   width: 500px;
   height: 400px;
@@ -127,14 +137,14 @@ nav li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .info-franquicia p,
 .info-franquicia h2 {
   margin-top: 60px;
   box-shadow: 0px 0px 55px 2px rgba(212, 171, 171, 0.384);
-  background-color: #d4abab2f;
-}
+  background-color: #d4abab2f; }
+
 .info-promos {
   background-image: url(../images/background-promos.jpg);
   background-size: cover;
@@ -146,8 +156,8 @@ nav li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .info-promos::before {
   content: " ";
   position: absolute;
@@ -158,23 +168,21 @@ nav li a {
   background-color: #000;
   opacity: 0.5;
   border-radius: 8px;
-  z-index: 1;
-}
+  z-index: 1; }
+
 .info-promos * {
-  z-index: 999;
-}
+  z-index: 999; }
+
 .info-promos h2,
 .info-promos p {
   margin-top: 60px;
   color: #ffffff;
-  text-align: center;
-}
+  text-align: center; }
 
 /* Menú */
-
 #menuLocoburger {
-  background-color: #e8b746;
-}
+  background-color: #e8b746; }
+
 #menuLocoburger .menu-container {
   display: grid;
   margin-left: auto;
@@ -183,14 +191,10 @@ nav li a {
   grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 350px);
   gap: 20px;
-  grid-template-areas:
-    "burger burger cerveza cerveza"
-    "veggie veggie veggie veggie"
-    "papas hotdog hotdog hotdog"
-    "ultra ultra ultra ultra";
+  grid-template-areas: "burger burger cerveza cerveza" "veggie veggie veggie veggie" "papas hotdog hotdog hotdog" "ultra ultra ultra ultra";
   justify-content: center;
-  align-items: stretch;
-}
+  align-items: stretch; }
+
 .menu-burger,
 .menu-cerveza,
 .menu-hotdog,
@@ -198,56 +202,57 @@ nav li a {
 .menu-ultra,
 .menu-veggie {
   border: 3px solid #347a1c;
+  width: 100%;
   border-radius: 12px;
   position: relative;
   text-align: center;
-  transition: 0.3s;
-}
+  transition: 0.3s; }
+
 .menu-text {
   text-align: center;
-  padding-top: 40px;
-}
+  padding-top: 40px; }
+
 .menu-burger {
   grid-area: burger;
   background-image: url(../images/menu-burger.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
+
 .menu-cerveza {
   grid-area: cerveza;
   background-image: url(../images/menu-cerveza.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
-}
+  background-position-y: center; }
+
 .menu-veggie {
   grid-area: veggie;
   background-image: url(../images/menu-veggie.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80%;
-}
+  background-position-y: 80%; }
+
 .menu-hotdog {
   grid-area: hotdog;
   background-image: url(../images/menu-hotdog.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
+
 .menu-papas {
   grid-area: papas;
   background-image: url(../images/menu-papas.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
+
 .menu-ultra {
   grid-area: ultra;
   background-image: url(../images/menu-ultra.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
-}
+  background-position-y: center; }
+
 .menu-burger::before,
 .menu-cerveza::before,
 .menu-hotdog::before,
@@ -263,8 +268,8 @@ nav li a {
   background-color: #000;
   opacity: 0.3;
   border-radius: 8px;
-  z-index: 1;
-}
+  z-index: 1; }
+
 .menu-burger *,
 .menu-cerveza *,
 .menu-hotdog *,
@@ -276,181 +281,135 @@ nav li a {
   color: #fff;
   left: 0;
   right: 0;
-  top: 30px;
-}
-
-/* Locales */
-
-#locales {
-  background-color: #e8b746;
-  padding: 30px;
-  text-align: center;
-  /* height: calc(75vh - 80px); */
-}
-#locales h2 {
-  text-align: center;
-}
-#locales main {
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.card-location {
-  border: #49a12b solid 3px;
-  border-radius: 12px;
-  background-color: transparent;
-}
-.local-container img {
-  width: 70% !important;
-  height: auto;
-  margin: 0 auto;
-}
-/* .local-container img:hover {
-  animation: agitar 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-} */
-.modal-map {
-  max-width: 700px !important;
-}
-.modal-map iframe {
-  width: 100%;
-}
-.modal-info {
-  font-size: 0.8em;
-  text-align: start;
-  padding: 0 30px;
-}
-.modal-info img {
-  width: 15px;
-  margin-right: 5px;
-}
-
-/* Franquicias */
-
-#franquiciasMain {
-  background-image: url(../images/background-franquicia.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: calc(100vh - 100px);
-  color: #fff;
-}
-#franquiciasMain .fran-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 200px;
-}
-.fran-form {
-  width: 700px;
-  margin: 0 auto;
-}
-.fran-container h1 {
-  text-align: center;
-}
-.fran-container p {
-  margin-top: 30px;
-  text-align: center;
-}
-.fran-section {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 200px;
-  background-color: #e8b746;
-  text-align: center;
-}
-.fran-section p {
-  margin-top: 20px;
-}
-
-.fran-form .row {
-  margin: 10px;
-}
+  top: 30px; }
 
 /* Promos */
-
 #promos {
   background-image: url(../images/bg-promos.jpg);
   background-size: cover;
   height: calc(100vh - 100px);
-  padding: 0 200px;
-}
+  padding: 0 200px; }
+
 #promos .row {
-  height: 100%;
-}
+  height: 100%; }
+
 .img-promos {
   width: 90%;
-  height: auto;
-}
+  height: auto; }
+
 .promo-item-1 p,
 .promo-item-1 h1 {
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 .promo-item-2 {
-  margin: auto 0;
-}
+  margin: auto 0; }
 
 #boxPromos {
   /* height: 100vh; */
   width: 100%;
   padding: 30px;
-  background-color: #e8b746;
-}
+  background-color: #e8b746; }
+
 .card-title {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* Footer */
+/* Locales */
+#locales {
+  background-color: #e8b746;
+  padding: 30px;
+  text-align: center;
+  /* height: calc(75vh - 80px); */ }
 
-footer {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  /* background: linear-gradient(to right, #000000 0%, #c49b3b 50%, #e8b746 100%); */
-  color: #fff;
+#locales h2 {
+  text-align: center; }
+
+#locales main {
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.card-location {
+  border: #49a12b solid 3px;
+  border-radius: 12px;
+  background-color: transparent; }
+
+.local-container img {
+  width: 70% !important;
+  height: auto;
+  margin: 0 auto; }
+
+.modal-map {
+  max-width: 700px !important; }
+
+.modal-map iframe {
+  width: 100%; }
+
+.modal-info {
   font-size: 0.8em;
-}
-footer div {
-  padding: 0 10px;
-}
+  text-align: start;
+  padding: 0 30px; }
+
+.modal-info img {
+  width: 15px;
+  margin-right: 5px; }
+
+/* Franquicias */
+#franquiciasMain {
+  background-image: url(../images/background-franquicia.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: calc(100vh - 100px);
+  color: #fff; }
+
+#franquiciasMain .fran-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 200px; }
+
+.fran-form {
+  width: 700px;
+  margin: 0 auto; }
+
+.fran-container h1 {
+  text-align: center; }
+
+.fran-container p {
+  margin-top: 30px;
+  text-align: center; }
+
+.fran-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 200px;
+  background-color: #e8b746;
+  text-align: center; }
+
+.fran-section p {
+  margin-top: 20px; }
+
+.fran-form .row {
+  margin: 10px; }
 
 /* Media Queries */
 @media (max-width: 991px) {
   nav ul {
-    text-align: center;
-  }
+    text-align: center; }
   nav ul li:hover {
-    transform: scale(1);
-  }
-
+    transform: scale(1); }
   #locales main {
-    flex-wrap: wrap;
-  }
-}
+    flex-wrap: wrap; } }
 
 /* Keyframes */
-
 @keyframes agitar {
   10%,
   90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
+    transform: translate3d(-1px, 0, 0); }
   20%,
   80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
+    transform: translate3d(2px, 0, 0); }
   30%,
   50%,
   70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
+    transform: translate3d(-4px, 0, 0); }
   40%,
   60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
+    transform: translate3d(4px, 0, 0); } }

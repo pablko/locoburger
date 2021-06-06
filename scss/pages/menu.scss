@@ -1,0 +1,111 @@
+@import "../variables";
+
+/* Menú */
+
+#menuLocoburger {
+  background-color: $mostaza;
+}
+#menuLocoburger .menu-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 200px;
+  grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: repeat(4, 350px);
+  gap: 20px;
+  grid-template-areas:
+    "burger burger cerveza cerveza"
+    "veggie veggie veggie veggie"
+    "papas hotdog hotdog hotdog"
+    "ultra ultra ultra ultra";
+  justify-content: center;
+  align-items: stretch;
+}
+.menu-burger,
+.menu-cerveza,
+.menu-hotdog,
+.menu-papas,
+.menu-ultra,
+.menu-veggie {
+  border: 3px solid $green-border;
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+}
+.menu-text {
+  text-align: center;
+  padding-top: 40px;
+}
+.menu-burger {
+  grid-area: burger;
+  background-image: url(../images/menu-burger.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.menu-cerveza {
+  grid-area: cerveza;
+  background-image: url(../images/menu-cerveza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.menu-veggie {
+  grid-area: veggie;
+  background-image: url(../images/menu-veggie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+}
+.menu-hotdog {
+  grid-area: hotdog;
+  background-image: url(../images/menu-hotdog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu-papas {
+  grid-area: papas;
+  background-image: url(../images/menu-papas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-ultra {
+  grid-area: ultra;
+  background-image: url(../images/menu-ultra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.menu-burger::before,
+.menu-cerveza::before,
+.menu-hotdog::before,
+.menu-papas::before,
+.menu-ultra::before,
+.menu-veggie::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black-bg;
+  opacity: 0.3;
+  border-radius: 8px;
+  z-index: 1;
+}
+.menu-burger *,
+.menu-cerveza *,
+.menu-hotdog *,
+.menu-papas *,
+.menu-ultra *,
+.menu-veggie * {
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 30px;
+}
