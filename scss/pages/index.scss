@@ -24,10 +24,8 @@ nav li a {
 #jumbotron {
   background-color: $mostaza;
   padding: 0 200px;
-}
-#jumbotron main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .main-text {
   width: 400px;
@@ -53,7 +51,7 @@ nav li a {
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.85em;
   padding: 8px 31px;
   text-decoration: none;
   margin-top: 20px;

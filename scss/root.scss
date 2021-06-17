@@ -20,17 +20,20 @@ footer {
   height: 80px;
   width: 100%;
   background-color: $black-bg;
-}
-.foo-logo, .foo-text {
-  margin: 5px 0;
-}
-.foo-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 0.8em;
-}
-footer .container div {
-  padding: 0 10px;
+  .foo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.8em;
+    .foo-logo, .foo-text {
+      margin: 10px 0;
+    }
+    .foo-text p {
+      margin-bottom: 0;
+    }
+  }
+  .container div {
+    padding: 0 10px;
+  }
 }
