@@ -30,6 +30,47 @@ footer {
   footer .container div {
     padding: 0 10px; }
 
+/* Media Queries*/
+@media (max-width: 575px) {
+  #jumbotron {
+    flex-direction: column; }
+    #jumbotron .main-text {
+      width: 400px; } }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px; }
+  p, a {
+    font-size: 1rem; }
+  #jumbotron {
+    padding: 50px 200px !important; }
+  .main-text {
+    width: 250px !important;
+    height: 300px;
+    padding: 10px; }
+    .main-text h1 {
+      font-size: 1.8rem !important; }
+    .main-text h3 {
+      font-size: 1.2rem; }
+  .main-image img {
+    width: 300px; }
+  /* Menu */
+  #menuLocoburger .menu-container {
+    padding: 20px 10px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 350px) !important;
+    grid-template-areas: "burger" "cerveza" "veggie" "papas" "hotdog" "ultra" !important; }
+    #menuLocoburger .menu-container .menu-veggie {
+      background-position: center !important; } }
+
+@media (max-width: 991px) {
+  nav ul {
+    text-align: center; }
+  nav ul li:hover {
+    transform: scale(1); }
+  #locales main {
+    flex-wrap: wrap; } }
+
 /* Header */
 header {
   background-color: #000; }
