@@ -35,7 +35,16 @@ footer {
   #jumbotron {
     flex-direction: column; }
     #jumbotron .main-text {
-      width: 400px; } }
+      width: 400px; }
+  /* Promos */
+  #promos .container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly !important; }
+    #promos .container .img-promos {
+      width: 70% !important; }
+    #promos .container .btn-accion {
+      margin: 0 auto;
+      display: table; } }
 
 @media (max-width: 768px) {
   body {
@@ -61,7 +70,14 @@ footer {
     grid-template-rows: repeat(6, 350px) !important;
     grid-template-areas: "burger" "cerveza" "veggie" "papas" "hotdog" "ultra" !important; }
     #menuLocoburger .menu-container .menu-veggie {
-      background-position: center !important; } }
+      background-position: center !important; }
+  /* Promos */
+  #promos .img-promos {
+    width: 100% !important; }
+  #boxPromos .card {
+    max-height: 500px;
+    max-width: 350px;
+    margin: 0 auto; } }
 
 @media (max-width: 991px) {
   nav ul {
@@ -118,10 +134,9 @@ nav li a {
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.85em;
+  font-size: 0.85rem;
   padding: 8px 31px;
   text-decoration: none;
-  margin-top: 20px;
   box-shadow: 0 3px 0 #347a1c;
   transition: 0.3s; }
 
@@ -327,28 +342,32 @@ nav li a {
 #promos {
   background-image: url(../images/bg-promos.jpg);
   background-size: cover;
-  height: calc(100vh - 100px);
-  padding: 0 200px; }
+  height: calc(100vh - 100px); }
 
-#promos .row {
-  height: 100%; }
-
-.img-promos {
-  width: 90%;
-  height: auto; }
+#promos .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around; }
+  #promos .container .promo-item-1 {
+    align-self: center; }
+  #promos .container .promo-item-2 {
+    align-self: center;
+    text-align: center; }
+    #promos .container .promo-item-2 .img-promos {
+      width: 70%;
+      height: auto; }
 
 .promo-item-1 p,
 .promo-item-1 h1 {
   font-weight: bold; }
-
-.promo-item-2 {
-  margin: auto 0; }
 
 #boxPromos {
   /* height: 100vh; */
   width: 100%;
   padding: 30px;
   background-color: #e8b746; }
+  #boxPromos .row {
+    row-gap: 20px; }
 
 .card-title {
   font-weight: bold; }

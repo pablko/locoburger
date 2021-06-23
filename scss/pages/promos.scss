@@ -1,24 +1,31 @@
+@import "../variables";
+
 /* Promos */
 
 #promos {
   background-image: url(../images/bg-promos.jpg);
   background-size: cover;
   height: calc(100vh - 100px);
-  padding: 0 200px;
 }
-#promos .row {
+#promos .container {
   height: 100%;
-}
-.img-promos {
-  width: 90%;
-  height: auto;
+  display: flex;
+  justify-content: space-around;
+  .promo-item-1 {
+    align-self: center;
+  }
+  .promo-item-2 {
+    align-self: center;
+    text-align: center;
+    .img-promos {
+      width: 70%;
+      height: auto;
+    }
+  }
 }
 .promo-item-1 p,
 .promo-item-1 h1 {
   font-weight: bold;
-}
-.promo-item-2 {
-  margin: auto 0;
 }
 
 #boxPromos {
@@ -26,6 +33,10 @@
   width: 100%;
   padding: 30px;
   background-color: $mostaza;
+  .row {
+    row-gap: 20px;
+  }
+
 }
 .card-title {
   font-weight: bold;
