@@ -9,11 +9,29 @@
       width: 400px;
     }
   }
+
+  /* Promos */
+
+  #promos .container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly !important;
+    .img-promos {
+      width: 70% !important;
+    }
+    .btn-accion {
+      margin: 0 auto;
+      display: table;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   body {
     font-size: 12px;
+  }
+  p,
+  a {
+    font-size: 1rem;
   }
   #jumbotron {
     padding: 50px 200px !important;
@@ -31,6 +49,38 @@
   }
   .main-image img {
     width: 300px;
+  }
+
+  /* Menu */
+
+  #menuLocoburger .menu-container {
+    padding: 20px 10px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 350px) !important;
+    grid-template-areas:
+      "burger"
+      "cerveza"
+      "veggie"
+      "papas"
+      "hotdog"
+      "ultra" !important;
+    .menu-veggie {
+      background-position: center !important;
+    }
+  }
+
+  /* Promos */
+
+  #promos .img-promos {
+    width: 100% !important;
+  }
+
+  #boxPromos {
+    .card {
+      max-height: 500px;
+      max-width: 350px;
+      margin: 0 auto;
+    }
   }
 }
 @media (max-width: 991px) {
