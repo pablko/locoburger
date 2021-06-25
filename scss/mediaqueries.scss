@@ -1,0 +1,47 @@
+@import "variables";
+
+/* Media Queries*/
+
+@media (max-width: 575px) {
+  #jumbotron {
+    flex-direction: column;
+    .main-text {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  #jumbotron {
+    padding: 50px 200px !important;
+  }
+  .main-text {
+    width: 250px !important;
+    height: 300px;
+    padding: 10px;
+    h1 {
+      font-size: 1.8rem !important;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  .main-image img {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li:hover {
+    transform: scale(1);
+  }
+
+  #locales main {
+    flex-wrap: wrap;
+  }
+}

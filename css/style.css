@@ -5,6 +5,8 @@
   text-decoration: none !important;
   list-style: none !important;
   scroll-behavior: smooth; }
+  * a {
+    font-size: 16px; }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -23,12 +25,44 @@ footer {
     justify-content: center;
     color: #fff;
     font-size: 0.8em; }
-    footer .foo-flex .foo-logo, footer .foo-flex .foo-text {
+    footer .foo-flex .foo-logo,
+    footer .foo-flex .foo-text {
       margin: 10px 0; }
     footer .foo-flex .foo-text p {
       margin-bottom: 0; }
   footer .container div {
     padding: 0 10px; }
+
+/* Media Queries*/
+@media (max-width: 575px) {
+  #jumbotron {
+    flex-direction: column; }
+    #jumbotron .main-text {
+      width: 400px; } }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px; }
+  #jumbotron {
+    padding: 50px 200px !important; }
+  .main-text {
+    width: 250px !important;
+    height: 300px;
+    padding: 10px; }
+    .main-text h1 {
+      font-size: 1.8rem !important; }
+    .main-text h3 {
+      font-size: 1.2rem; }
+  .main-image img {
+    width: 300px; } }
+
+@media (max-width: 991px) {
+  nav ul {
+    text-align: center; }
+  nav ul li:hover {
+    transform: scale(1); }
+  #locales main {
+    flex-wrap: wrap; } }
 
 /* Header */
 header {
@@ -52,7 +86,7 @@ nav li a {
   background-color: #e8b746;
   padding: 0 200px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
 .main-text {
   width: 400px;
@@ -68,7 +102,7 @@ nav li a {
 
 .main-text h1 {
   font-family: "Lato", sans-serif;
-  font-size: 2.5em; }
+  font-size: 2.5rem; }
 
 .btn-accion {
   background-color: #49a12b;
@@ -113,14 +147,12 @@ nav li a {
   height: 500px;
   display: flex;
   background-color: #e8b746;
-  justify-content: flex-start !important;
+  justify-content: space-evenly;
   column-gap: 40px;
-  padding: 0 130px; }
+  padding: 50px 150px; }
 
 .info-franquicia,
 .info-promos {
-  align-self: center;
-  justify-self: center;
   border: 3px #49a12b solid;
   border-radius: 10px; }
 
@@ -133,8 +165,7 @@ nav li a {
   color: #49a12b;
   text-align: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
 
@@ -148,12 +179,11 @@ nav li a {
   background-image: url(../images/background-promos.jpg);
   background-size: cover;
   position: relative;
+  width: 500px;
   height: 400px;
-  width: 650px;
   margin-right: 40px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
 
@@ -186,7 +216,7 @@ nav li a {
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 200px;
+  padding: 40px 0px;
   grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
   grid-template-rows: repeat(4, 350px);
   gap: 20px;
@@ -387,28 +417,3 @@ nav li a {
 
 .fran-form .row {
   margin: 10px; }
-
-/* Media Queries */
-@media (max-width: 991px) {
-  nav ul {
-    text-align: center; }
-  nav ul li:hover {
-    transform: scale(1); }
-  #locales main {
-    flex-wrap: wrap; } }
-
-/* Keyframes */
-@keyframes agitar {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0); }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0); }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0); } }
