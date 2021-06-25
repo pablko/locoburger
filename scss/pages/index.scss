@@ -111,7 +111,7 @@ nav li a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .info-franquicia p,
@@ -129,7 +129,7 @@ nav li a {
   margin-right: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .info-promos::before {

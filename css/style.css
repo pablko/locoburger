@@ -24,7 +24,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 0.8em; }
+    font-size: 0.9rem; }
     footer .foo-flex .foo-logo,
     footer .foo-flex .foo-text {
       margin: 10px 0; }
@@ -36,9 +36,28 @@ footer {
 /* Media Queries*/
 @media (max-width: 575px) {
   #jumbotron {
-    flex-direction: column; }
+    flex-direction: column-reverse;
+    align-items: center; }
     #jumbotron .main-text {
-      width: 400px; }
+      width: 350px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      #jumbotron .main-text h1 {
+        font-size: 2.5rem !important; }
+      #jumbotron .main-text h3 {
+        line-height: 1.8rem; }
+  #infoAdicional {
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 700px !important;
+    padding: 30px 0;
+    row-gap: 20px; }
+    #infoAdicional .info-franquicia,
+    #infoAdicional .info-promos {
+      width: 350px !important;
+      margin: 0;
+      padding: 0 20px 20px !important; }
   /* Promos */
   #promos .container {
     flex-direction: column-reverse;
@@ -192,7 +211,7 @@ nav li a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
 
 .info-franquicia p,
@@ -210,7 +229,7 @@ nav li a {
   margin-right: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
 
 .info-promos::before {
