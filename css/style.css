@@ -100,15 +100,17 @@ footer {
   #boxPromos .card {
     max-height: 500px;
     max-width: 350px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  /* Locales */
+  #locales .info-strong {
+    font-size: 1rem;
+    margin-top: 10px !important; } }
 
 @media (max-width: 991px) {
   nav ul {
     text-align: center; }
   nav ul li:hover {
-    transform: scale(1); }
-  #locales main {
-    flex-wrap: wrap; } }
+    transform: scale(1); } }
 
 /* Header */
 header {
@@ -395,17 +397,20 @@ nav li a {
 #locales {
   background-color: #e8b746;
   padding: 30px;
-  text-align: center;
-  /* height: calc(75vh - 80px); */ }
-
-#locales h2 {
   text-align: center; }
 
-#locales main {
-  flex-wrap: nowrap;
-  justify-content: space-between; }
+#locales h2 {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+#locales .locales-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 3rem; }
 
 .card-location {
+  width: 25rem;
   border: #49a12b solid 3px;
   border-radius: 12px;
   background-color: transparent; }
@@ -425,6 +430,8 @@ nav li a {
   font-size: 0.8em;
   text-align: start;
   padding: 0 30px; }
+  .modal-info .info-strong {
+    font-weight: bold; }
 
 .modal-info img {
   width: 15px;

@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 /* Locales */
 
@@ -6,16 +6,19 @@
   background-color: $mostaza;
   padding: 30px;
   text-align: center;
-  /* height: calc(75vh - 80px); */
 }
 #locales h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
-#locales main {
-  flex-wrap: nowrap;
-  justify-content: space-between;
+#locales .locales-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 3rem;
 }
 .card-location {
+  width: 25rem;
   border: $green solid 3px;
   border-radius: 12px;
   background-color: transparent;
@@ -35,6 +38,9 @@
   font-size: 0.8em;
   text-align: start;
   padding: 0 30px;
+  .info-strong {
+    font-weight: bold;
+  }
 }
 .modal-info img {
   width: 15px;
