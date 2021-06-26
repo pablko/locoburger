@@ -2,49 +2,12 @@
 
 /* Media Queries*/
 
-@media (max-width: 575px) {
-  #jumbotron {
-    flex-direction: column-reverse;
-    align-items: center;
-    .main-text {
-      width: 350px !important;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      h1 {
-        font-size: 2.5rem !important;
-      }
-      h3 {
-        line-height: 1.8rem;
-      }
-    }
+@media (max-width: 991px) {
+  nav ul {
+    text-align: center;
   }
-  #infoAdicional {
-    flex-direction: column !important;
-    align-items: center !important;
-    height: 700px !important;
-    padding: 30px 0;
-    row-gap: 20px;
-    .info-franquicia,
-    .info-promos {
-      width: 350px !important;
-      margin: 0;
-      padding: 0 20px 20px !important;
-    }
-  }
-
-  /* Promos */
-
-  #promos .container {
-    flex-direction: column-reverse;
-    justify-content: space-evenly !important;
-    .img-promos {
-      width: 70% !important;
-    }
-    .btn-accion {
-      margin: 0 auto;
-      display: table;
-    }
+  nav ul li:hover {
+    transform: scale(1);
   }
 }
 
@@ -112,12 +75,75 @@
     font-size: 1rem;
     margin-top: 10px !important;
   }
-}
-@media (max-width: 991px) {
-  nav ul {
-    text-align: center;
+
+  /* Franquicias */
+
+  .fran-section {
+    padding: 50px 0 !important;
+    .fran-form {
+      width: 550px !important;
+    }
   }
-  nav ul li:hover {
-    transform: scale(1);
+}
+
+@media (max-width: 575px) {
+  #jumbotron {
+    flex-direction: column-reverse;
+    align-items: center;
+    .main-text {
+      width: 350px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h1 {
+        font-size: 2.5rem !important;
+      }
+      h3 {
+        line-height: 1.8rem;
+      }
+    }
+  }
+  #infoAdicional {
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 700px !important;
+    padding: 30px 0;
+    row-gap: 20px;
+    .info-franquicia,
+    .info-promos {
+      width: 350px !important;
+      margin: 0;
+      padding: 0 20px 20px !important;
+    }
+  }
+
+  /* Promos */
+
+  #promos .container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly !important;
+    .img-promos {
+      width: 70% !important;
+    }
+    .btn-accion {
+      margin: 0 auto;
+      display: table;
+    }
+  }
+
+  /* Franquicias */
+
+  #franquiciasMain {
+    background-position-x: 48% !important;
+    background-position-y: -50px !important;
+    .container p {
+      width: 350px !important;
+    }
+  }
+  .fran-section {
+    padding: 50px 0 !important;
+    .fran-form {
+      width: 380px !important;
+    }
   }
 }

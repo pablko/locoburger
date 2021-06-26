@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 /* Franquicias */
 
@@ -8,28 +8,33 @@
   background-position: bottom;
   height: calc(100vh - 100px);
   color: #fff;
-}
-#franquiciasMain .fran-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 200px;
+  padding-top: 60px;
+  text-align: center;
+  .container h1 {
+    text-align: center;
+  }
+  .container p {
+    margin: 60px auto 0;
+    width: 500px;
+    font-size: 1.1rem;
+  }
 }
 .fran-form {
   width: 700px;
   margin: 0 auto;
 }
-.fran-container h1 {
-  text-align: center;
-}
-.fran-container p {
-  margin-top: 30px;
-  text-align: center;
-}
 .fran-section {
   margin-left: auto;
   margin-right: auto;
   padding: 40px 200px;
-  background-color: $mostaza;
+  background: rgb(254, 170, 56);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 177, 69) 0%,
+    rgba(232, 183, 70, 1) 35%,
+    rgba(232, 183, 70, 1) 100%
+  );
+
   text-align: center;
 }
 .fran-section p {
